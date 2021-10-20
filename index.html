@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: #f5cf8e;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./images/oknowthisislogo.png" alt="" width="100px"></a>
+          <a class="navbar-brand" href="#intro"><img src="./images/oknowthisislogo.png" alt="" width="100px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -31,7 +31,7 @@
                     <a class="nav-link" href="#pricing">Pricing</a>
                   </li>
                   <li class="nav-item ms-2 d-none d-md-inline">
-                    <a class="btn btn-secondary" href="#pricing">buy now</a>
+                    <a class="btn btn-secondary" href="#slides">buy now</a>
                   </li>
             </ul>
           </div>
@@ -60,7 +60,7 @@
                                 <div class="display-5 text-light">You haven't tasted bread until you've had ours</div>
                             </h1>
                             <p class="lead my-4 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae numquam adipisci odio nostrum, sequi, dolorem non facere vel inventore ipsa modi quaerat ab nesciunt quo iure provident temporibus reprehenderit eos!</p>
-                            <a href="#pricing" class="btn btn-outline-light">try it out</a>
+                            <a href="#slides" class="btn btn-outline-light">try it out</a>
                         </div>
                         <div class="col-md-5 text-center d-none d-md-block">
                             <img class="img-fluid" src="assets/ebook-cover.png" alt="">
@@ -85,22 +85,45 @@
                         <div class="display-1 pb-2">How it's made</div>
                     </h1>
                     <p class="lead my-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae numquam adipisci odio nostrum, sequi, dolorem non facere vel inventore ipsa modi quaerat ab nesciunt quo iure provident temporibus reprehenderit eos!</p>
+    
+                    <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Get Recipe
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Leave Site?</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            You will be redirected to another website. Are you sure you want to leave?
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=O7lRV1VHv1g">leave Site</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="intro" style="background: #f5cf8e;
+    <section id="slides" style="background: #f5cf8e;
     
       background-size: cover;
       background-position: center;">
-      <div class="pt-5 pb-5">
-          <div class="pt-5 pb-5">
+      <div class="pt-5 ">
+          <div class="pt-5 ">
               <div class="pt-5 pb-5">
                 <div class="container-lg pt-5 pb-5" >
                     <div class="row justify-content-center align-items-center">
                       <h1 class="display-1 text-center">Our Main Breads</h1>
-                        <div class="col-md-9 text-center text-md-start pt-5 pb-5">
+                        <div class="col-md-11 text-center text-md-start pt-5 ">
                           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
                               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -109,24 +132,27 @@
                             </div>
                             <div class="carousel-inner">
                               <div class="carousel-item active">
-                                <img src="./images/bread1.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
+                                <img src="./images/bread1.jpg" class="d-block w-100 rounded" alt="...">
+                                <div class="carousel-caption d-none d-md-block pt-5" style="right: 0%; left: 0%; bottom: 0%; padding-bottom: 5%; background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.7) );">
                                   <h5>Square bread</h5>
                                   <p>The people can't get enough of these</p>
+                                  <button type="button" class="btn btn-outline-success">Give it a try</button>
                                 </div>
                               </div>
                               <div class="carousel-item">
-                                <img src="./images/bread2.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
+                                <img src="./images/bread2.jpg" class="d-block w-100 rounded alt=">
+                                <div class="carousel-caption d-none d-md-block pt-5" style="right: 0%; left: 0%; bottom: 0%; padding-bottom: 5%; background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.7) );">
                                   <h5>Potato shaped bread</h5>
                                   <p>Looks kinda wierd but is really good</p>
+                                  <button type="button" class="btn btn-outline-success">Give it a try</button>
                                 </div>
                               </div>
                               <div class="carousel-item">
-                                <img src="./images/bread3.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
+                                <img src="./images/bread3.jpg" class="d-block w-100 rounded" alt="...">
+                                <div class="carousel-caption d-none d-md-block pt-5" style="right: 0%; left: 0%; bottom: 0%; padding-bottom: 5%; background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.7) );">
                                   <h5>Caccoon bread</h5>
                                   <p>No, it's not french</p>
+                                  <button type="button" class="btn btn-outline-success">Give it a try</button>
                                 </div>
                               </div>
                             </div>
@@ -139,6 +165,7 @@
                               <span class="visually-hidden">Next</span>
                             </button>
                           </div>
+                          </div>
                         </div>
                     </div>
                 </div>
@@ -148,6 +175,141 @@
       </div>
         
     </section>
+
+    <section class="pt-5 pb-5" id="contact" style="background: #dfd9dd;">
+      <div class="pt-5 pb-5">
+        <div class="pt-5 pb-5">
+            <!-- Wrapper container -->
+      <div class="container py-4 pt-5 pb-5">
+
+        <!-- Bootstrap 5 starter form -->
+        <form id="contactForm">
+
+          <div class="col-md-5 text-center text-md-start pt-5 pb-5">
+            <h1 class="display-1">
+              Contact Us
+            </h1>
+            <h1 class="display-6">
+              We've been expecting you
+            </h1>
+          </div>
+
+          
+
+          <!-- Name input -->
+          <div class="mb-3">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-control" id="name" type="text" placeholder="Name" />
+          </div>
+
+          <!-- Email address input -->
+          <div class="mb-3">
+            <label class="form-label" for="emailAddress">Email Address</label>
+            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+          </div>
+
+          <!-- Message input -->
+          <div class="mb-3">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
+          </div>
+
+          <!-- Form submit button -->
+          <div class="d-grid">
+            <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+          </div>
+
+        </form>
+
+      </div>
+        </div>
+      </div>
+      
+    </section>
+
+          <!-- Footer -->
+      <footer class="page-footer font-small blue pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+          <!-- Grid row -->
+          <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+
+              <!-- Content -->
+              <h5 class="text-uppercase">Footer Content</h5>
+              <p>Here you can use rows and columns to organize your footer content.</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+              <!-- Links -->
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!">Link 4</a>
+                </li>
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+              <!-- Links -->
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!">Link 4</a>
+                </li>
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+
+      </footer>
+      <!-- Footer -->
 
     <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
